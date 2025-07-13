@@ -1,0 +1,11 @@
+names:
+- Account Number
+- Amount in Number
+- Amount in Text
+- Cheque Number
+- Date
+- Name
+- Signature
+nc: 7
+train: D:\cheque\project\images\train
+val: D:\cheque\project\images\val

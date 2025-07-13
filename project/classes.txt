@@ -1,0 +1,7 @@
+Account Number
+Amount in Number
+Amount in Text
+Cheque Number
+Date
+Name
+Signature

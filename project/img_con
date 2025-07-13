@@ -1,0 +1,18 @@
+from PIL import Image
+import os
+
+def main():
+    tiff_dir = 'D:\\cheque\\archive\\IDRBT Cheque Image Dataset\\300\\'
+    jpeg_dir = 'D:\\cheque\\img\\'
+
+    for filename in os.listdir(tiff_dir):
+        if filename.endswith('.tif') or filename.endswith('.tiff'):
+            im = Image.open(os.path.join(tiff_dir, filename))
+            for i in range(im.n_frames):
+                im.seek(i)
+                jpeg_filename = os.path.splitext(filename)[0] + f'_frame{i}.jpg'
+                im.save(os.path.join(jpeg_dir, jpeg_filename))
+
+
+if __name__ == "__main__":
+    main()
